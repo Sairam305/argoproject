@@ -5,7 +5,7 @@ metadata:
     app: movies
   name: movies-deploy
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: movies
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: rahamshaik/moviespaytm:latest
+        image: sairam305/paytmmovies:latest
         ports:
           - containerPort: 80
 ---
